@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+venv/
+env/
+
+# IDE/Editor settings
+.vscode/
+.idea/
+
+# SQLite journal files (safe to ignore)
+*.sqlite3-journal
+
+# OS-specific files
+.DS_Store
+Thumbs.db

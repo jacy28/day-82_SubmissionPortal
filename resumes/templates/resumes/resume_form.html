@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container my-5 border border-muted shadow w-50">
+        <div class="py-5 d-flex flex-column justify-content-center align-items-center">
+            <h2 class="mb-4">Resume Upload</h2>
+        <form method="POST" enctype="multipart/form-data">
+            {%csrf_token%}
+            {{form.as_p}}
+            <div class="text-center"><button type="submit" class="btn btn-warning">Save</button></div>
+        </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
